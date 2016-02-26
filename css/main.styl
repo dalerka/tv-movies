@@ -53,19 +53,90 @@ img
   justify-content space-around
   align-items center
   width 100%
-    
+  
+  @media(min-width:768px)
+    justify-content: space-between
+    align-items baseline
+  
+  .logo
+    @media(min-width:768px)
+      margin 0 auto 0 5%
+      
   .menu
     display none
     width 100%
     z-index 2
     
-    ul
-      margin-top 0
+    @media(min-width: 768px)
+      display block
+      width auto
+      margin 0 5% 0 auto
     
     background white
     
+    ul
+      margin-top 0
+    
     .menu__item
       margin 5px
+      
+      @media(min-width: 768px)
+        display inline-block
+        margin 0 10px
   
   .dropdown
     font-size 2.5em
+    
+    @media(min-width: 768px)
+      display none
+  
+// Banner Styles
+.banner
+  padding 25px 0
+  max-height 669px
+  text-align center
+  
+  @media(min-width: 768px)
+    height 520px
+    
+    .wrapper
+      height 470px
+      display flex
+      justify-content center
+      align-items center
+      
+    .movie-info__sinopse
+      max-width 480px
+  
+  background url('../images/banner_background.jpg') no-repeat top center
+  
+  .movie-poster
+    max-height 300px
+    
+    @media(min-width:768px)
+      margin-right: 25px
+  
+  .movie-info
+    color white
+    
+    .movie-info__title
+      margin 0.55em
+      
+      @media(min-width: 768px)
+        display inline-block
+        margin-bottom 0
+        font-size 2.2em
+    
+    .movie-info__rating
+      color highlight-color
+      
+      @media(min-width: 768px)
+        display inline-block
+    
+    .fa:last-child
+      color secondary-color
+    
+    .movie-info__details
+      font-weight 700
+      
+    
