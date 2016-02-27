@@ -62,17 +62,28 @@ img
   
   @media(min-width:768px)
     justify-content: space-between
-    align-items baseline
+    align-items center
   
   .logo
     @media(min-width:768px)
       margin 0 auto 0 5%
-  
-  .menu--is-active
-    display block
       
   .menu
     display none
+    
+    @media(min-width:768px)
+      display flex
+      width auto
+      margin-right 5%
+      
+      ul
+        display flex
+      
+      li
+        margin-left 10px
+    
+  .menu--is-active
+    display block
     width 100%
     z-index 2
     
@@ -241,22 +252,3 @@ img
 .footer
   padding 25px 0 
   text-align center
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
