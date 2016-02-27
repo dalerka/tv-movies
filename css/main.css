@@ -21,6 +21,12 @@ h5,
 h6 {
   font-weight: 300;
 }
+h2 {
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0.5em;
+}
 ul {
   list-style: none;
   padding-left: 0;
@@ -145,4 +151,54 @@ img {
 }
 .banner .movie-info .movie-info__details {
   font-weight: 700;
+}
+.popular-movies,
+.popular-tv-shows {
+  padding: 35px 0 0 0;
+}
+@media (min-width: 768px) {
+  .popular-movies .wrapper,
+  .popular-tv-shows .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.movies-list,
+.tv-shows-list {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .movies-list,
+  .tv-shows-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.movies-list .post,
+.tv-shows-list .post {
+  width: 100%;
+  margin-top: 1.5em;
+}
+@media (min-width: 768px) {
+  .movies-list .post,
+  .tv-shows-list .post {
+    margin-top: 0;
+  }
+}
+.movies-list .post .post__image,
+.tv-shows-list .post .post__image {
+  max-height: 300px;
+  border-radius: 5px;
+}
+.movies-list .post .post__title,
+.tv-shows-list .post .post__title {
+  margin: 0;
+}
+.movies-list .post .post__info,
+.tv-shows-list .post .post__info {
+  margin: 0;
 }

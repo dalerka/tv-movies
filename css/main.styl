@@ -27,6 +27,12 @@ html, body
 h1, h2, h3, h4, h5, h6
   font-weight 300;
 
+h2
+  margin-bottom 0
+
+p
+  margin-top .5em
+  
 ul
   list-style none
   padding-left 0
@@ -139,4 +145,53 @@ img
     .movie-info__details
       font-weight 700
       
+// Post Shows and Movie Styles
+.popular-movies
+.popular-tv-shows
+  padding 35px 0 0 0
+  
+  @media(min-width:768px)  
+    .wrapper
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      align-items baseline
+    
+.movies-list
+.tv-shows-list
+  width 100%
+  text-align center
+  
+  @media(min-width: 768px)
+    display flex
+    flex-direction row
+    justify-content space-around
+  
+  .post
+    width 100%
+    margin-top 1.5em
+    
+    @media(min-width: 768px)
+      margin-top 0
+    
+    .post__image
+      max-height 300px
+      border-radius 5px
+    
+    .post__title
+      margin 0
+    
+    .post__info
+      margin 0
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
