@@ -33,7 +33,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #8b8b9f;
+  color: #494950;
 }
 a:hover {
   color: #73e298;
@@ -63,6 +63,9 @@ img {
   .main-header .logo {
     margin: 0 auto 0 5%;
   }
+}
+.main-header .menu--is-active {
+  display: block;
 }
 .main-header .menu {
   display: none;
@@ -147,7 +150,7 @@ img {
   }
 }
 .banner .movie-info .fa:last-child {
-  color: #8b8b9f;
+  color: #494950;
 }
 .banner .movie-info .movie-info__details {
   font-weight: 700;
@@ -201,4 +204,63 @@ img {
 .movies-list .post .post__info,
 .tv-shows-list .post .post__info {
   margin: 0;
+}
+.newsletter {
+  padding: 75px;
+  color: #fff;
+  background: #252529;
+}
+.newsletter h2 {
+  margin-bottom: 2em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .newsletter h2 {
+    max-width: 480px;
+    margin: 0 auto 1em auto;
+  }
+}
+.newsletter .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .newsletter .news {
+    display: block;
+    text-align: center;
+  }
+}
+.newsletter .news .news__name,
+.newsletter .news .news__email {
+  max-width: 350px;
+  height: 45px;
+  margin-bottom: 1em;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  background: #494950;
+}
+@media (min-width: 768px) {
+  .newsletter .news .news__name,
+  .newsletter .news .news__email {
+    margin: 1em 10px;
+  }
+}
+.newsletter .news .news__btn {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #73e298;
+}
+@media (min-width: 768px) {
+  .newsletter .news .news__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.footer {
+  padding: 25px 0;
+  text-align: center;
 }
