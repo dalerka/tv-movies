@@ -186,17 +186,17 @@ img {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .movies-list,
   .tv-shows-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
   }
 }
 .movies-list .post,
 .tv-shows-list .post {
-  width: 100%;
   margin-top: 1.5em;
 }
 @media (min-width: 768px) {
